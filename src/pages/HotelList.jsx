@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import BookingPage from "./BookingPage";
 
 export default function HotelList() {
-    const url = "https://3ce1259c-9b4e-4833-a33f-a58a2820b28b-00-152pggy9n8ka9.sisko.replit.dev";
+    const url = "https://e4b3a13c-d8e4-4687-bac5-6001eebe3671-00-31n2czp7jgupl.pike.replit.dev";
 
     const [modalShow, setModalShow] = useState(null); // For Login modal
     const [showSignUpModal, setShowSignUpModal] = useState(false); // For Sign-Up modal

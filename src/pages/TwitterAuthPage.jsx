@@ -5,7 +5,7 @@ import useLocalStorage from "use-local-storage";
 import { useNavigate } from "react-router-dom";
 
 export default function AuthPage() {
-    const url = "https://3ce1259c-9b4e-4833-a33f-a58a2820b28b-00-152pggy9n8ka9.sisko.replit.dev/";
+    const url = "https://e4b3a13c-d8e4-4687-bac5-6001eebe3671-00-31n2czp7jgupl.pike.replit.dev";
 
     // Possible values: null (no modal shows), "Login", "SignUp"
     const [modalShow, setModalShow] = useState(null);

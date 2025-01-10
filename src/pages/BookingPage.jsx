@@ -5,7 +5,7 @@ import { useParams, useNavigate } from "react-router-dom";
 
 export default function BookingPage() {
     const { id } = useParams();
-    const url = "https://3ce1259c-9b4e-4833-a33f-a58a2820b28b-00-152pggy9n8ka9.sisko.replit.dev";
+    const url = "https://e4b3a13c-d8e4-4687-bac5-6001eebe3671-00-31n2czp7jgupl.pike.replit.dev";
     const [hotelInfo, setHotelInfo] = useState(null);
     const [name, setName] = useState("");
     const [checkInDate, setCheckInDate] = useState("");
@@ -29,7 +29,7 @@ export default function BookingPage() {
     const handleBooking = async (e) => {
         e.preventDefault();
 
-        if (!checkInDate || !checkOutDate || !phoneNumber) {
+        if (!checkInDate || !checkOutDate || !phoneNumber || !name) {
             alert("Please fill in all the required fields.");
             return;
         }

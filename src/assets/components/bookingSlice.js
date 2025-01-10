@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 // Async thunk to fetch hotels from the API
 export const fetchHotels = createAsyncThunk('hotels/fetchHotels', async () => {
-    const response = await fetch('https://3ce1259c-9b4e-4833-a33f-a58a2820b28b-00-152pggy9n8ka9.sisko.replit.dev/hotels');
+    const response = await fetch('https://e4b3a13c-d8e4-4687-bac5-6001eebe3671-00-31n2czp7jgupl.pike.replit.dev/hotels');
     const data = await response.json();
     return data;
 });
@@ -10,7 +10,7 @@ export const fetchHotels = createAsyncThunk('hotels/fetchHotels', async () => {
 // Async thunk to book a hotel
 export const bookHotel = createAsyncThunk('hotels/bookHotel', async ({ bookingData, token }, { rejectWithValue }) => {
     try {
-        const response = await fetch('https://3ce1259c-9b4e-4833-a33f-a58a2820b28b-00-152pggy9n8ka9.sisko.replit.dev/bookings', {
+        const response = await fetch('https://e4b3a13c-d8e4-4687-bac5-6001eebe3671-00-31n2czp7jgupl.pike.replit.dev/bookings', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
